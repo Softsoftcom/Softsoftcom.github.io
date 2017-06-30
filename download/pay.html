@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Whonix</title>
+    <link rel="shortcut icon" href="../img/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+  
+   $( function() {
+    $( "#slider-range-min" ).slider({
+      range: "min",
+      value: 0,
+      min: 0,
+	  step: 50,
+      max: 10000,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.value ),
+		$( "#amount_1" ).val( "$" + ui.value )
+		;
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+	 $( "#amount_1" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+  } );
+ 
+ 
+  
+  
+	</script>
+	
+
+	
+  </head>
+  <body>
+
+
+<div class="hero thin-hero">
+	<header>
+  <div class="clearfix">
+    <h1><a href="/"><img width="160" src="../img/Whonix_Logo.png" alt="Whonix"></a></h1>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/download" class="cc-active">Download</a></li>
+        <li><a href="https://whonix.org/wiki/Main_Page">Wiki</a></li>
+	<li><a href="https://forums.whonix.org/">Forum</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+	<div class="container">
+		<h2 class="editable">Download Whonix</h2>
+	</div>
+</div>
+
+<section id="pay_h_section">
+	<div class="container subheader" id="pay_h">
+		<h3 class="editable">Help shape the future of Whonix</h3>
+		<p class="editable">Another text field</p>
+	</div>
+</section>
+
+<section id="pay_cont_1_section">
+	<div class="container subheader" id="pay_cont_1">
+		<div class="c_0">
+		<h4 class="editable">Whonix</h4>
+		<p class="editable">I support Whonix, and want to donate about</p>
+
+		<div id="slider-range-min">
+		<span id="span_1"></span>
+		<span id="span_2"></span>
+		</div>
+			<p>
+ <input type="text" id="amount">
+ 
+</p>
+		
+		</div>
+		<div class="c_1">		
+		<p id="c_1_0">Your contribution</p><input type="text" readonly id="amount_1" align="left"> <input type="submit" value="Pay" align="left" id="c_1_2">
+		</div>
+	</div>
+</section>
+
+
+
+<section id="pay_cont_1_section">
+	<div class="container subheader" id="pay_cont_3">
+		<p class="" >Not now, take me to the <a href="#">download</a> > </p>
+		<hr>
+	</div>
+</section>
+
+
+<section id="pay_h2_section">
+	<div class="container subheader" id="pay_h">
+		<h3 class="editable">Functionality & Futures</h3>
+		<p class="editable">Another text field</p>
+	</div>
+</section>
+
+	
+
+
+	<section>
+		<div class="container subheader">
+			<h3>Share Whonix with your friends:</h3>
+			<p><a href="https://twitter.com/intent/tweet?url=https://www.whonix.org&text=&via=Whonix"><img src="../img/twitter.png" class="editable"></a><a> </a><a href="https://facebook.com/sharer.php?u=https://www.whonix.org"><img src="../img/facebook2.png" class="editable"></a><a> </a><a href="https://plus.google.com/share?url=https://www.whonix.org"><img src="../img/google-plus.png" class="editable"></a></p>
+		</div>
+	</section>
+
+    <footer>
+		<div class="container">
+			<p><a href="https://www.whonix.org/wiki/Impressum">Impressum</a><a> </a><a href="https://www.whonix.org/wiki/Datenschutz">Datenschutz</a><a> </a><a href="https://www.whonix.org/wiki/Haftungsausschluss">Haftungsausschluss</a><a> </a><a href="https://www.whonix.org/wiki/Donate">Donate</a><a> </a><a href="https://www.whonix.org/wiki/Investors">Investors</a></p>
+		</div>
+    </footer>
+  </body>
+</html>
