@@ -26,6 +26,7 @@
       max: 10000,
       slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.value ),
+		$( "#flevel" ).val( ui.value ),
 		$( "#amount_1" ).val( "$" + ui.value )
 		;
       }
@@ -80,17 +81,18 @@
 		<p class="editable">I support Whonix, and want to donate about</p>
 
 		<div id="slider-range-min">
-		<span id="span_1"></span>
-		<span id="span_2"></span>
+		<span id="span_1"><div class="span_1_text">1</div></span> 
+
+		<span id="span_2"><div class="span_2_text">10.000</div></span>
 		</div>
+
 			<p>
  <input type="text" id="amount">
- 
 </p>
-		
 		</div>
 		<div class="c_1">		
-		<p id="c_1_0">Your contribution</p><input type="text" readonly id="amount_1" align="left"> <input type="submit" value="Pay" align="left" id="c_1_2">
+		<p id="c_1_0">Your contribution</p><input type="text" readonly id="amount_1" align="left"> 
+		<label type="submit" value="Pay" align="left" id="c_1_2" for="zayavka" class="button"> Pay </label>
 		</div>
 	</div>
 </section>
@@ -111,6 +113,113 @@
 		<p class="editable">Another text field</p>
 	</div>
 </section>
+
+<section id="ticket_section">
+<div class="container subheader" id="ticket_cont_1">
+<div id="t_0">
+
+<div id="t_first_ok">
+<div id="t_span_first_ok"></div>
+<div id="t_number_ok">T161</div>
+<div id="t_text_ok">Whonix running as Qubes DispVM use saved clock</div>
+<div id="clear">
+</div>
+</div>
+
+
+
+<div id="t_first_none">
+<div id="t_span_second_none"></div>
+<div id="t_number_ok">T162</div>
+<div id="t_text_ok">Whonix running as Qubes DispVM use saved clock</div>
+<div id="clear">
+</div>
+</div>
+
+<div id="t_second">
+<div id="t_line_second_ok"></div>
+<div id="t_span_second_ok"></div>
+<div id="t_number_ok">T163</div>
+<div id="t_text_ok">Tor Browser 7.0a2 broken in stretch based Whonix 14 - jemalloc</div>
+<div id="clear">
+</div>
+</div>
+
+<div id="t_second">
+<div id="t_line_second_ok"></div>
+<div id="t_span_second_ok"></div>
+<div id="t_number_ok">T164</div>
+<div id="t_text_ok">Speed up libvirt tarball creation time</div>
+<div id="clear">
+</div>
+</div>
+
+<div id="t_second">
+<div id="t_line_second_ok"></div>
+<div id="t_span_second_ok"></div>
+<div id="t_number_ok">T165</div>
+<div id="t_text_ok">Make sure Qubes-Whonix has no access to clocksource=xen</div>
+<div id="clear">
+</div>
+</div>
+
+<div id="t_second">
+<div id="t_line_second_ok"></div>
+<div id="t_span_second_ok"></div>
+<div id="t_number_ok">T166</div>
+<div id="t_text_ok">Sdwdate sclockadj change time without spamming logs</div>
+<div id="clear">
+</div>
+</div>
+
+<div id="t_second_none">
+<div id="t_line_second_none"></div>
+<div id="t_span_second_none"></div>
+<div id="t_number_ok">T167</div>
+<div id="t_text_ok">Use whonixcheck Whonix News to count Whonix users</div>
+<div id="clear">
+</div>
+</div>
+
+<div id="t_second_none">
+<div id="t_line_second_none"></div>
+<div id="t_span_second_none"></div>
+<div id="t_number_ok">T168</div>
+<div id="t_text_ok">Change bindp compile to postinstall</div>
+<div id="clear">
+</div>
+</div>
+
+<div id="t_second_none">
+<div id="t_line_second_none"></div>
+<div id="t_span_second_none"></div>
+<div id="t_number_ok">T169</div>
+<div id="t_text_ok">Supress VB error messages</div>
+<div id="clear">
+</div>
+</div>
+
+<div id="t_second_none">
+<div id="t_line_second_none"></div>
+<div id="t_span_second_none"></div>
+<div id="t_number_ok">T170</div>
+<div id="t_text_ok">Tb-updater onion mirros downloads support</div>
+<div id="clear">
+</div>
+</div>
+</section>
+
+<!--- pay --->  
+<input class="hide" type="checkbox" id="zayavka"/>
+<div class="modal">
+	<label class="modal-x2" for="zayavka"></label>
+  <div>
+    <label class="modal-x" for="zayavka">&times;</label>
+    <h3></h3>
+    <p><img src="../img/test.PNG"></p>
+  </div>
+</div>
+<!--- pay ---> 
 
 	
 

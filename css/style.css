@@ -521,6 +521,12 @@ textarea {
 	padding-top: 0px;
 }
 
+#ticket_section {
+	padding-bottom: ;
+	padding-top: 0px;
+
+}
+
 #pay_cont_1_section {
 	padding-top: 0px;
 	padding-bottom: 25px;
@@ -537,7 +543,7 @@ textarea {
 	}
 
 #pay_h > p {
-	font-size: 16px;
+	font-size: 18px;
 }
 
 #pay_cont_1 {
@@ -572,8 +578,7 @@ textarea {
     background: #0b0;
 }
 
-#slider-range-min
-{
+#slider-range-min {
 	width: 480px;
     height: 3px;
     background: #bbb;
@@ -619,38 +624,38 @@ textarea {
     width: 90px;
 	margin: -23px 5px;
 	float: right;
-	    padding: 9px;
-	    background: #fff;
-		border: 1px solid #ddd; 
-		color:#000; 
-		font-weight:bold;
+	padding: 9px;
+	background: #fff;
+	border: 1px solid #ddd; 
+	color:#000; 
+	font-weight:bold;
 	
 }
 
 #amount_1  {
-background: #f5f5f5;
-width: 90px;
+	background: #f5f5f5;
+	width: 90px;
 	margin: -2px 5px;
 	float: ;
-	    padding: 5px;
-	    background: none;
-		border: 0px solid #ddd; 
-		color:#fff; 
-		font-weight:bold;
-		font-size: 22px;
+	padding: 5px;
+	background: none;
+	border: 0px solid #ddd; 
+	color:#fff; 
+	font-weight:bold;
+	font-size: 22px;
 	
 }
 
 .c_1 {
 	background: #34495e;
 	color: #fff;
-	    padding-top: 25px;
-    padding-bottom: 20px;
+    padding-top: 27px;
+    padding-bottom: 24px;
 }
 
 
 #c_1_0 {
-margin: 0px;
+	margin: 0px;
     width: 120px;
     padding-left: 295px;
     font-size: 15px;
@@ -658,33 +663,243 @@ margin: 0px;
 }	
 
 #c_1_2 {
-	padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 37px;
+    padding-right: 37px;
     background: #469d3b;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     position: relative;
-    margin-top: -41px;
+    margin-top: -40px;
     margin-right: 26px;
     font-weight: 600;
     color: #eeeeee;
     font-size: 21px;
     border-radius: 6px;
+    float: right;
 	}
 
-#pay_cont_3
-
-{
+#pay_cont_3 {
     max-width: 650px;
 	text-align: left;
 }
 
-#pay_cont_3 > p
-{
-	padding-left: 45px;
+#pay_cont_3 > p {
+	padding-left: 20px;
 	}
 	
-	#pay_cont_3 > hr
-{
+#pay_cont_3 > hr {
 	margin-top: 25px;
 	}
+
+.span_1_text {	
+	margin-left: -1px;
+    margin-top: 12px;
+    color: #999;
+    font-size: 14px;
+}
+
+.span_2_text {	
+	margin-left: -18px;
+    margin-top: 12px;
+    color: #999;
+    font-size: 14px;
+}
+
+#ticket_cont_1 {
+    max-width: 650px;
+	border: 1px solid rgba(0,0,0,0.2);
+	text-align: left;
+}
+
+#t_0 {
+	padding:31px;
+}
+
+#t_span_first_ok {
+	left: 0%; 
+	border: 7px solid #0b0;
+    background: #0b0;
+    font-weight: normal;
+    color: #0b0;
+	top: -.5em;
+    margin-left: -.3em;
+	position: inherit;
+    z-index: 1;
+    width: 4px;
+    height: 4px;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+	border-radius: 13px;
+	float: left;
+}
+
+#t_number_ok {
+	font-weight: 700;
+	font-size: 14px;
+	float: left;
+	margin-top: -4px;
+    margin-left: 29px;
+}
+
+#t_text_ok {
+	font-size: 14px;
+	margin-top: -4px;
+    margin-left: 29px;
+    float: left;
+	color: #999999;
+	width: 482px;
+}
+
+#clear {
+clear: both;
+}
+
+#t_second {
+    margin-top: -6px;
+}
+
+#t_second_none {
+    margin-top: -6px;
+}
+
+#t_line_second_ok {
+	width: 4px;
+    height: 26px;
+    background: #0b0;
+    margin-left: 2px;
+}
+
+#t_first_none {
+display:none;
+margin-top: -6px;
+}
+
+#t_span_second_ok {
+	left: 0%; 
+	border: 7px solid #0b0;
+    background: #0b0;
+    font-weight: normal;
+    color: #0b0;
+	top: -.5em;
+    margin-left: -.3em;
+	position: inherit;
+    z-index: 1;
+    width: 4px;
+    height: 4px;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+	border-radius: 13px;
+	float: left;
+}
+
+#t_span_second_none {
+	left: 0%; 
+	border: 7px solid #999;
+    background: #999;
+    font-weight: normal;
+    color: #999;
+	top: -.5em;
+    margin-left: -.3em;
+	position: inherit;
+    z-index: 1;
+    width: 4px;
+    height: 4px;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+	border-radius: 13px;
+	float: left;
+}
+
+#t_span_first_none {
+	width: 4px;
+    height: 26px;
+    background: #999;
+    margin-left: 2px;
+	
+}
+
+#t_line_second_none {
+	width: 4px;
+    height: 26px;
+    background: #999;
+    margin-left: 2px;
+}
+
+/* snip */
+
+.hide{display: none;}
+
+.label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.button {
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background-color: #2c2c2c;
+}
+
+.modal {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.2);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.modal>div {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    padding: 20px 20px 5px;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal-x {
+    font-family: serif;
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 36px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.modal-x2 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+input:checked+.modal {
+    opacity: 1;
+    right: 0;
+}
+
+.button:hover,.modal-x:hover {opacity: 0.7;}
+.modal>div::-webkit-scrollbar {display: none;}
+
+/* snip */
