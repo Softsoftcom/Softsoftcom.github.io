@@ -27,18 +27,25 @@
       slide: function( event, ui ) {
         $( "#amount" ).val( "$" + ui.value ),
 		$( "#flevel" ).val( ui.value ),
-		$( "#amount_1" ).val( "$" + ui.value )
+		$( "#amount_0" ).val( "$" + ui.value )
 		;
       }
     });
     $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
-	 $( "#amount_1" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
+	 $( "#amount_0" ).val( "$" + $( "#slider-range-min" ).slider( "value" ) );
   } );
  
  
   
-  
 	</script>
+	
+	<script>
+	
+		
+		setTimeout(function() { $('#pay_cont_1_section_js').css('display', 'block'); }, 1);
+		setTimeout(function() { $('#pay_cont_1_section_nonjs').css('display', 'none'); }, 1);
+		
+		</script>
 	
 
 	
@@ -74,7 +81,7 @@
 	</div>
 </section>
 
-<section id="pay_cont_1_section">
+<section id="pay_cont_1_section_js" >
 	<div class="container subheader" id="pay_cont_1">
 		<div class="c_0">
 		<h4 class="editable">Whonix</h4>
@@ -91,9 +98,33 @@
 </p>
 		</div>
 		<div class="c_1">		
-		<p id="c_1_0">Your contribution</p><input type="text" readonly id="amount_1" align="left"> 
+		<p id="c_1_0">Your contribution</p><input type="text" readonly id="amount_0" align="left"> 
 		<label type="submit" value="Pay" align="left" id="c_1_2" for="zayavka" class="button"> Pay </label>
 		</div>
+	</div>
+</section>
+
+<section id="pay_cont_1_section_nonjs" >
+	<div class="container subheader" id="pay_cont_1">
+		
+		<div class="c_0" style="padding-bottom: 15px;">
+		<h4 class="editable">Whonix</h4>
+		<p class="editable">I support Whonix, and want to donate about</p>
+
+		
+		<label class="label_r"><input type="radio" checked name="check_pay" id="radio_pay_1" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 1</span></label> 
+		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_2" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 10</span></label>
+		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_3" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 50</span></label>
+		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_4" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 100</span></label>
+		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 500</span></label>		
+   		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 1000</span></label> 
+   		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 5000</span></label>		
+		</div>
+		<div class="c_1">		
+		<label class="check_pay_text"><span class="label_text_2">Or enter the desired amount ($):</span> <input type="text" name="check_pay" id="amount_none"></label>
+		<label type="submit" value="Pay" align="left" id="c_1_2" for="zayavka" class="button"> Pay </label>
+		</div>
+		
 	</div>
 </section>
 
@@ -235,6 +266,8 @@
 		<div class="container">
 			<p><a href="https://www.whonix.org/wiki/Impressum">Impressum</a><a> </a><a href="https://www.whonix.org/wiki/Datenschutz">Datenschutz</a><a> </a><a href="https://www.whonix.org/wiki/Haftungsausschluss">Haftungsausschluss</a><a> </a><a href="https://www.whonix.org/wiki/Donate">Donate</a><a> </a><a href="https://www.whonix.org/wiki/Investors">Investors</a></p>
 		</div>
+		
+		
     </footer>
   </body>
 </html>
