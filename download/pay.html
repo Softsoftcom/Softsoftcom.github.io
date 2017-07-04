@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Whonix</title>
     <link rel="shortcut icon" href="../img/favicon.png">
 
@@ -128,7 +128,128 @@
 	</div>
 </section>
 
+<!--- pay --->  
+<input class="hide" type="checkbox" id="zayavka"/>
+<div class="modal">
+	<label class="modal-x2" for="zayavka"></label>
+  <div>
+    <label class="modal-x" for="zayavka">&times;</label>
+	
+	<div id="body_pay">
+	
+	<div  class="tabs_01">
+	<a href="#pay_text_01"><div class="pay_head_01"><div class="pay_span"><div class="pay_h1">Credit & Debit cards</div> <div class="pay_h2">Transiction fee may apply</div></div> <div class="pay_img_m"><img src="../img/pay_01.png" style="box-shadow:none;"></div> </div></a>
+	<div id="pay_text_01">
+	<form name="bank_pay">
+	<div id="pay_visa_h1">Cardholder Name</div>
+	<input type="text" required>
+	<div id="pay_visa_h1">Card Number</div>
+	<input type="text" required>	<div class="img_visa"><img src="../img/pay_01_visa.png"></div>
+	<div class="end_date">
+	<div id="pay_visa_h1">End Date</div> 
+	<input type="text" placeholder="mm" pattern="[0-9]{2}" class="pay_visa_mm" required> <input type="text" placeholder="yy" class="pay_visa_yyyy" pattern="[0-9]{2}" required>
+	</div>
+	<div class="pay_cvv">
+	<div id="pay_visa_h1">CVV</div> 
+	<input type="text" class="pay_visa_cvv" pattern="[0-9]{3}" placeholder="3 digits" required> <div  class="img_cvv"><img src="../img/pay_01_cvv.png"></div>
+	</div>
+	<div id="pay_visa_ok"><input type="checkbox" required>I have read and accept the terms of use and privacy policy</div>
+	<input type="submit" name="bank_pay" value="Pay Now" id="pay_now_button">
+	</form>
+	</div>
+	</div>
+	
+	
+	<div  class="tabs_02">
+	<a href="#pay_text_02"><div class="pay_head_02"><div class="pay_span"><div class="pay_h1">Bank transfer</div> <div class="pay_h2">Free of charge</div></div> <div class="pay_img_m"><img src="../img/pay_02.png" style="box-shadow:none;"></div> </div></a>
+	<div id="pay_text_02">
+	<div id="pay_visa_h1">Patrick Schleizer</div>
+	<div id="pay_visa_h1">IBAN: DE77500100600320473603<BR>BIC: PBNKDEFF</div>
+	</div>
+	</div>
+	
+	<div  class="tabs_03">
+	<a href="#pay_text_03"><div class="pay_head_03"><div class="pay_span"><div class="pay_h1">Pay with Bitcoin</div> <div class="pay_h2">Free of charge</div></div> <div class="pay_img_m"><img src="../img/pay_03.png" style="box-shadow:none;"></div> </div></a>
+	<div id="pay_text_03">
+	<div id="pay_visa_h1">Bitcoin accepted here</div>
+	<div id="pay_visa_h1">1CWqkunp7sXaywTMR3pzfsiikt2DZ8DuuS</div>
+	</div>
+	</div>
+	
+	<div  class="tabs_04">
+	<a href="#pay_text_04"><div class="pay_head_04"><div class="pay_span"><div class="pay_h1">Pay with Paypal</div> <div class="pay_h2">Transiction fee may apply</div></div> <div class="pay_img_m"><img src="../img/pay_04.png" style="box-shadow:none;"></div> </div></a>
+	<div id="pay_text_04">
+	<form name="paypal_pay_01">
+	<div id="pay_paypal_h1">Paypal Subscribtion</div>
+	<input type="text" class="paypal_price" pattern="[0-9]" placeholder="20" required> 
+	<select class="paypal_price_m">
+	<option>USD</option>
+	<option>EUR</option>
+	</select>
+	<div class="img_paypal"><img src="../img/pay_04_pay.png" style="box-shadow: none;"></div>
+	<input type="submit" name="paypal_pay_01" value="Subscribe" id="pay_now_button">
+	</form>
+	<hr>
+	<div id="pay_visa_h1">Paypal Subscribtion</div>
+	<div id="pay_visa_h1"><a href="https://paypal.me/Whonix">https://paypal.me/Whonix</a></div>
+	<hr>
+	<form name="paypal_pay_02">
+	<div id="pay_paypal_h1">Paypal Onetime Donation</div>
+	<input type="text" class="paypal_price" pattern="[0-9]" placeholder="20" required>
+	<select class="paypal_price_m">
+	<option>USD</option>
+	<option>EUR</option>
+	</select>
+	<div class="img_paypal"><img src="../img/pay_04_pay.png" style="box-shadow: none;"></div>
+	<input type="submit" name="paypal_pay_02" value="Buy Now" id="pay_now_button">
+	</form>
+	</div>
+	</div>
+	
+	
+	<div  class="tabs_05">
+	<a href="#pay_text_05"><div class="pay_head_05"><div class="pay_span"><div class="pay_h1">Pay with Monero</div> <div class="pay_h2">Transiction fee may apply</div></div> <div class="pay_img_m"><img src="../img/pay_05.png" style="box-shadow:none;"></div> </div></a>
+	<div id="pay_text_05">
+	<div id="pay_visa_h1">Monero accepted here</div>
+	<div id="pay_visa_h1">4AHtZCaHJx8VbpKEjA1kj91GjZ94XLJzfVop3pziJVXBJb6sHXQ2Xz8
+	NFNcKi5ZQxPbxEx2i2iLqvfoGzURzkUSfD83dBSP</div>
+	</div>
+	</div>
+	
+	
+	<div  class="tabs_06">
+	<a href="#pay_text_06"><div class="pay_head_06"><div class="pay_span"><div class="pay_h1">Pay with Dash</div> <div class="pay_h2">Transiction fee may apply</div></div> <div class="pay_img_m"><img src="../img/pay_06.png" style="box-shadow:none;"></div> </div></a>
+	<div id="pay_text_06">
+	<div id="pay_visa_h1">Dash accepted here</div>
+	<div id="pay_visa_h1">XhEAJMxSJSZFWS14dYbmJ1uE82pBnxasCM</div>
+	</div>
+	</div>
+	
+	
+	<div  class="tabs_07">
+	<a href="#pay_text_07"><div class="pay_head_07"><div class="pay_span"><div class="pay_h1">Pay with Litecoin</div> <div class="pay_h2">Transiction fee may apply</div></div> <div class="pay_img_m"><img src="../img/pay_07.png" style="box-shadow:none;"></div> </div></a>
+	<div id="pay_text_07">
+	<div id="pay_visa_h1">Litecoin accepted here</div>
+	<div id="pay_visa_h1">LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9</div>
+	</div>
+	</div>
+	
 
+	
+	
+	
+	
+	</div>
+	
+
+
+	
+    
+  
+	
+  </div>
+</div>
+<!--- pay --->
 
 <section id="pay_cont_1_section">
 	<div class="container subheader" id="pay_cont_3">
@@ -240,17 +361,7 @@
 </div>
 </section>
 
-<!--- pay --->  
-<input class="hide" type="checkbox" id="zayavka"/>
-<div class="modal">
-	<label class="modal-x2" for="zayavka"></label>
-  <div>
-    <label class="modal-x" for="zayavka">&times;</label>
-    <h3></h3>
-    <p><img src="../img/test.PNG"></p>
-  </div>
-</div>
-<!--- pay ---> 
+
 
 	
 

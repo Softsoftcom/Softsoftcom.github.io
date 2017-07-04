@@ -6,7 +6,8 @@ html, body {
 }
 
 html, body, input, textarea, select {
-	font-family: 'Raleway', sans-serif;
+	
+	font-family: 'Roboto','Raleway', sans-serif;
 	color: #444;
 	font-weight: 300;
 	font-size: 18px;
@@ -879,7 +880,7 @@ margin-top: -6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.4);
     opacity: 0;
     transition: opacity .3s;
 }
@@ -887,7 +888,7 @@ margin-top: -6px;
 .modal>div {
     position: relative;
     width: 90%;
-    max-width: 400px;
+    max-width: 601px;
     max-height: 90%;
     padding: 20px 20px 5px;
     background-color: #fff;
@@ -897,14 +898,14 @@ margin-top: -6px;
 }
 
 .modal-x {
-    font-family: serif;
+	font-family: serif;
     position: absolute;
     z-index: 2;
-    top: 5px;
-    right: 5px;
+    top: 17px;
+    right: 17px;
     width: 25px;
     border-radius: 50%;
-    font-size: 36px;
+    font-size: 50px;
     line-height: 25px;
     text-align: center;
 }
@@ -927,6 +928,548 @@ input:checked+.modal {
 .modal>div::-webkit-scrollbar {display: none;}
 
 /* snip */
+
+/* pay */
+
+#body_pay
+{
+	border: ;
+	background:;
+	margin: 36px;
+} 
+
+.tabs_01 a
+{
+	text-decoration: none;
+	color: #000;
+} 
+
+
+
+.tabs_01
+{	
+	background:;
+	margin-bottom: 9px;
+	border-radius: 3px;
+} 
+.pay_head_01
+{
+	border: 1px solid #dbdbdb;
+	padding: 11px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+} 
+#pay_text_01
+{
+	background:#fff;
+	display: none;
+	border: 1px solid #479c3b;
+	margin-top: -1px;
+	padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ #pay_text_01:target {
+         display:block;
+      }
+	  
+.tabs_01:active .pay_head_01 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_01:hover .pay_head_01 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_01:focus .pay_head_01 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_02 a
+{
+	text-decoration: none;
+	color: #000;
+} 
+
+.tabs_02
+{	
+	background:;
+	margin-bottom: 9px;
+	border-radius: 3px;
+} 
+.pay_head_02
+{
+	border: 1px solid #dbdbdb;
+	padding: 11px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+} 
+#pay_text_02
+{
+	background:#fff;
+	display: none;
+	border: 1px solid #479c3b;
+	margin-top: -1px;
+	padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ #pay_text_02:target {
+         display:block;
+      }
+	  
+.tabs_02:active .pay_head_02 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_02:hover .pay_head_02 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_02:focus .pay_head_02 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_03 a
+{
+	text-decoration: none;
+	color: #000;
+} 
+
+
+
+.tabs_03
+{	
+	background:;
+	margin-bottom: 9px;
+	border-radius: 3px;
+} 
+.pay_head_03
+{
+	border: 1px solid #dbdbdb;
+	padding: 11px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+} 
+#pay_text_03
+{
+	background:#fff;
+	display: none;
+	border: 1px solid #479c3b;
+	margin-top: -1px;
+	padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ #pay_text_03:target {
+         display:block;
+      }
+	  
+.tabs_03:active .pay_head_03 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_03:hover .pay_head_03 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_03:focus .pay_head_03 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+
+.tabs_04 a
+{
+	text-decoration: none;
+	color: #000;
+} 
+
+
+
+.tabs_04
+{	
+	background:;
+	margin-bottom: 9px;
+	border-radius: 3px;
+} 
+.pay_head_04
+{
+	border: 1px solid #dbdbdb;
+	padding: 11px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+} 
+#pay_text_04
+{
+	background:#fff;
+	display: none;
+	border: 1px solid #479c3b;
+	margin-top: -1px;
+	padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ #pay_text_04:target {
+         display:block;
+      }
+	  
+.tabs_04:active .pay_head_04 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_04:hover .pay_head_04 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_04:focus .pay_head_04 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+
+.tabs_05 a
+{
+	text-decoration: none;
+	color: #000;
+} 
+
+
+
+.tabs_05
+{	
+	background:;
+	margin-bottom: 9px;
+	border-radius: 3px;
+} 
+.pay_head_05
+{
+	border: 1px solid #dbdbdb;
+	padding: 11px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+} 
+#pay_text_05
+{
+	background:#fff;
+	display: none;
+	border: 1px solid #479c3b;
+	margin-top: -1px;
+	padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ #pay_text_05:target {
+         display:block;
+      }
+	  
+.tabs_05:active .pay_head_05 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+  
+}
+
+.tabs_05:hover .pay_head_05 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_05:focus .pay_head_05 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+
+.tabs_06 a
+{
+	text-decoration: none;
+	color: #000;
+} 
+
+
+
+.tabs_06
+{	
+	background:;
+	margin-bottom: 9px;
+	border-radius: 3px;
+} 
+.pay_head_06
+{
+	border: 1px solid #dbdbdb;
+	padding: 11px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+} 
+#pay_text_06
+{
+	background:#fff;
+	display: none;
+	border: 1px solid #479c3b;
+	margin-top: -1px;
+	padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ #pay_text_06:target {
+         display:block;
+      }
+	  
+.tabs_06:active .pay_head_06 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_06:hover .pay_head_06 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_06:focus .pay_head_06 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+
+.tabs_07 a
+{
+	text-decoration: none;
+	color: #000;
+} 
+
+
+
+.tabs_07
+{	
+	background:;
+	margin-bottom: 9px;
+	border-radius: 3px;
+} 
+.pay_head_07
+{
+	border: 1px solid #dbdbdb;
+	padding: 11px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+} 
+#pay_text_07
+{
+	background:#fff;
+	display: none;
+	border: 1px solid #479c3b;
+	margin-top: -1px;
+	padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ #pay_text_07:target {
+         display:block;
+      }
+	  
+.tabs_07:active .pay_head_07 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_07:hover .pay_head_07 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+.tabs_07:focus .pay_head_07 {
+  color: black; 
+  border: 1px solid #479c3b;
+  background: #f2f2f2;
+}
+
+
+.pay_span {
+margin-left: 33px;
+}
+
+
+.pay_h1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.pay_h2 {
+    font-size: 12px;
+    line-height: 17px;
+    color: #9b9b9b;
+}
+
+.pay_img_m {
+    float: right;
+    margin-top: -29px;
+    margin-right: 10px;
+}
+
+#pay_visa_h1{
+    font-size: 16px;
+	font-weight: 600;
+}
+
+#pay_paypal_h1{
+    font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+#pay_text_01 input
+{
+    margin-top: -5px;
+    padding: 9px;
+    background: #fff;
+	margin-bottom: 18px;
+	border: 1px solid #dbdbdb;
+	font-size: 14px;
+}
+
+#pay_text_04 input
+{
+    margin-top: -5px;
+    padding: 9px;
+    background: #fff;
+	margin-bottom: 18px;
+	border: 1px solid #dbdbdb;
+	font-size: 14px;
+}
+
+.img_visa {
+    float: right;
+    margin-top: -48px;
+    margin-right: 10px;
+}
+
+.end_date {
+	float: left;
+	margin-right: 35px;
+}
+
+#pay_text_01 .pay_visa_mm{
+	width: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+#pay_text_01 .pay_visa_yyyy{
+	width: 80px;
+    margin-right: 10px;
+}
+
+#pay_text_01 .pay_visa_cvv{
+	width: 80px;
+}
+
+#pay_text_01 .img_cvv{
+	float: right;
+    margin-right: 119px;
+    margin-top: -60px;
+}
+
+#pay_visa_ok{
+    font-size: 12px;
+    color: #868686;
+}
+
+#pay_text_01 #pay_now_button{
+    float: none;
+    width: 100%;
+    background: #479c3b;
+    font-size: 24px;
+}
+
+#pay_text_04 .paypal_price{
+    width: 80px;
+	float: left;
+	margin-right: 10px;
+}
+
+#pay_text_04 .paypal_price_m{
+    width: 80px;
+    height: 35px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    top: -3px;
+    position: relative;
+}
+
+.img_paypal {
+    float: right;
+    margin-top: 3px;
+	margin-right: 55px;
+}
+
+#pay_text_04 #pay_now_button{
+    float: none;
+    width: 100%;
+    background: #479c3b;
+    font-size: 24px;
+}
+
+
+/* pay */
 
 .checkbox,
 .radio {
