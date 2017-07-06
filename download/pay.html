@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="../css/font.css?family=Roboto" rel="stylesheet">
     <title>Whonix</title>
     <link rel="shortcut icon" href="../img/favicon.png">
 
@@ -13,8 +13,8 @@
     <link href="../css/style.css" rel="stylesheet">
 	
 	<link rel="stylesheet" href="../css/jquery-ui.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/jquery-ui.js"></script>
 	<script>
   
    $( function() {
@@ -44,6 +44,7 @@
 		
 		setTimeout(function() { $('#pay_cont_1_section_js').css('display', 'block'); }, 1);
 		setTimeout(function() { $('#pay_cont_1_section_nonjs').css('display', 'none'); }, 1);
+		
 		
 		</script>
 	
@@ -112,20 +113,20 @@
 		<h4 class="editable">Whonix</h4>
 		<p class="editable">I support Whonix, and want to donate about</p>
 
-		
+		<form action="pay.php" method="post">
 		<label class="label_r"><input type="radio" checked name="check_pay" id="radio_pay_1" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 1</span></label> 
-		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_2" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 10</span></label>
-		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_3" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 50</span></label>
-		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_4" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 100</span></label>
-		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 500</span></label>		
-   		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 1000</span></label> 
-   		<label class="label_r"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 5000</span></label>		
+		<label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay" id="radio_pay_2" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 10</span></label>
+		<label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay" id="radio_pay_3" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 50</span></label>
+		<label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay" id="radio_pay_4" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 100</span></label>
+		<label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 500</span></label>		
+   		<label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 1000</span></label> 
+   		<label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay" id="radio_pay_5" class="radio"/><span class="radio-custom"></span><span class="label_text">$ 5000</span></label>		
 		</div>
 		<div class="c_1">		
 		<label class="check_pay_text"><span class="label_text_2">Or enter the desired amount ($):</span> <input type="text" name="check_pay" id="amount_none"></label>
-		<label type="submit" value="Pay" align="left" id="c_1_2" for="zayavka" class="button"> Pay </label>
+		<input type="submit" value="Pay" align="left" id="c_1_2" for="zayavka" class="button" style="padding-top: 8px;  padding-bottom: 8px;">
 		</div>
-		
+		</form>
 	</div>
 </section>
 
