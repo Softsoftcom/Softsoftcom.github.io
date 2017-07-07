@@ -1571,6 +1571,8 @@ margin-left: 33px;
 	line-height: 32px;
 }
 
+
+
 .p_span
 {
 	margin-top: 35px;
@@ -1616,6 +1618,15 @@ float: none;
 	{
 		font-size: 55px;
 	}
+	
+	.label_text_2 {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+	
 #amount_0{
     margin: -33px 0px;
 	float: right;
@@ -1759,4 +1770,14 @@ float: none;
 	.end_date {
     margin-right: 0;
 }
+
+.label_text_2 {
+    margin-top: -46px;
+    margin-bottom: 10px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+
 }
