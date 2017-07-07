@@ -366,7 +366,7 @@ textarea {
 
 	header {
 		padding-top: 70px;
-		width: 90%;
+		width: 95%;
 		max-width: 1060px;
 		margin: 0 auto 0;
 	}
@@ -383,7 +383,7 @@ textarea {
 
 	nav li {
 		width: 130px;
-		margin: 0 10px;
+		margin: 10px 10px;
 		display: inline-block;
 	}
 
@@ -868,7 +868,7 @@ margin-top: -6px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    background-color: #2c2c2c;
+    background-color: #479c3b;
 }
 
 .modal {
@@ -1395,6 +1395,7 @@ margin-left: 33px;
 	margin-bottom: 18px;
 	border: 1px solid #dbdbdb;
 	font-size: 14px;
+	width: 100%;
 }
 
 .img_visa {
@@ -1552,4 +1553,210 @@ margin-left: 33px;
 	background-color: #479c3b;
 	font-weight: bold;
     color: #fff;
+}
+
+@media screen and (max-width: 800px)
+{
+	#pay_text_04 input{
+	width: 100%;
+	}
+#pay_text_01 .img_cvv {
+    float: left;
+    margin-right: 0;
+    margin-left: 302px;
+    margin-top: -58px;
+}
+.c_0{
+    padding-bottom: 9px;
+	line-height: 32px;
+}
+
+.p_span
+{
+	margin-top: 35px;
+}
+#amount
+{
+    margin-top: 33px;
+    float: none;
+    margin: auto;
+}
+.c_1{
+	padding-bottom: 86px;
+}
+#amount_0{
+    margin: -33px 0px;
+	float: right;
+	padding: 5px;
+	width: 65px;
+	}
+#c_1_0{
+padding-left: 0;
+margin: auto;
+float: none;
+}
+#c_1_2{
+    margin-right: 0px;
+	margin-top: 20px;
+}
+#slider-range-min {
+    width: 95%;
+}
+
+#t_text_ok {
+    font-size: 12px;
+    width: 370px;
+}
+
+}
+
+@media screen and (max-width: 610px)
+{
+	h1
+	{
+		font-size: 55px;
+	}
+#amount_0{
+    margin: -33px 0px;
+	float: right;
+	padding: 5px;
+	}
+#slider-range-min {
+    width: 95%;
+}
+#t_text_ok {
+    font-size: 10px;
+    width: 73%;
+	margin-top: 2px;
+}
+}
+
+@media screen and (max-width: 510px)
+{
+	
+.end_date {
+    margin-right: 31px;
+}
+	
+#amount_0{
+    margin: -33px 0px;
+	float: right;
+	padding: 5px;
+	}
+#t_line_second_ok{
+	display: none;
+}
+
+#t_line_second_none{
+	display: none;
+}
+
+#t_number_ok{
+	margin-left: 8px;
+}
+
+#t_text_ok{
+	margin-left: 10px;
+	font-size: 13px;
+	width: 75%;
+    margin-top: -3px;
+}
+#t_first_ok{
+	margin-bottom: 10px;
+}
+#t_first_none{
+    margin-bottom: 10px;
+}
+#t_second{
+    margin-bottom: 10px;
+}
+#t_second_none{
+    margin-bottom: 10px;
+}
+.pay_span {
+    margin-left: 2px;
+}
+}
+
+@media screen and (max-width: 450px)
+{
+	.end_date {
+    margin-right: 90px;
+}
+.pay_img_m_01
+{
+   display:none;
+	}	
+#amount_0{
+    margin: -33px 0px;
+	float: right;
+	padding: 5px;
+	}	
+#pay_text_01 .img_cvv {
+
+    float:left;
+    margin-top: -58px;
+	margin-left: 90px;
+	margin-right: 0;
+}
+	.pay_span {
+    margin-left: 2px;
+}
+
+}
+
+@media screen and (max-width: 420px)
+{
+	.end_date {
+    margin-right: 55px;
+}
+}
+
+@media screen and (max-width: 380px)
+{
+#pay_text_01 .img_cvv {  
+    margin-right: 17px;
+}
+	.pay_img_m {
+    float: right;
+    margin-top: -31px;
+    margin-right: -1px;
+}
+	.pay_span {
+    margin-left: 2px;
+}
+	
+#t_text_ok {
+    margin-left: 10px;
+    font-size: 13px;
+    width: 70%;
+    margin-top: -3px;
+}	
+
+#pay_text_01 .pay_visa_yyyy {
+	margin-right: 0;
+    float: left;
+}
+
+.end_date {
+    margin-right: 30px;
+}
+#pay_text_01 .pay_visa_mm {
+    margin-right: 5px;
+}
+
+}
+
+@media screen and (max-width: 350px)
+{
+	.end_date {
+    margin-right: 5px;
+}
+}
+
+@media screen and (max-width: 322px)
+{
+	.end_date {
+    margin-right: 0;
+}
 }

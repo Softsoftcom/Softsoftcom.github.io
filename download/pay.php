@@ -137,7 +137,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                     <span id="span_2"><div class="span_2_text">10.000</div></span>
                 </div>
 
-                <p>
+                <p class="p_span">
                     <input name="rangeInput" type="text" id="amount">
 
                 </p>
@@ -226,7 +226,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                             <div class="pay_h1">Credit & Debit cards</div>
                             <div class="pay_h2">Transiction fee may apply</div>
                         </div>
-                        <div class="pay_img_m"><img src="../img/pay_01.png" style="box-shadow:none;"></div>
+                        <div class="pay_img_m"><img src="../img/pay_01.png" style="box-shadow:none;" class="pay_img_m_01"></div>
                     </div>
                 </a>
                 <div id="pay_text_01">
@@ -258,7 +258,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                 <a href="#pay_text_02">
                     <div class="pay_head_02">
                         <div class="pay_span">
-                            <div class="pay_h1">Bank transfer</div>
+                            <div class="pay_h1" style="font-size: 14px;">Bank transfer</div>
                             <div class="pay_h2">Free of charge</div>
                         </div>
                         <div class="pay_img_m"><img src="../img/pay_02.png" style="box-shadow:none;"></div>
@@ -321,13 +321,13 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                         <input type="hidden" name="p3" value="1">
                         <input type="hidden" name="t3" value="M">
                         <input type="hidden" name="bn" value="PP-SubscriptionsBF:button.png:NonHosted">
-                        <input type="image" src="http://madcrush.ru/wp-content/uploads/button.png" border="0" style="margin-left: -10px;"
+                        <input type="image" src="../img/button.png" border="0" style="margin-left: -10px;"
                                name="submit" alt="PayPal — более безопасный и легкий способ оплаты через Интернет!">
 
                     </form>
                     <hr>
                     <div id="pay_visa_h1">Paypal Subscribtion</div>
-                    <div id="pay_visa_h1"><a href="https://paypal.me/Whonix">https://paypal.me/Whonix</a></div>
+                    <div id="pay_visa_h1" style="font-size: 14px;"><a href="https://paypal.me/Whonix">https://paypal.me/Whonix</a></div>
                     <hr>
 
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -350,7 +350,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                         <input type="hidden" name="cn" value="Добавить специальные инструкции для продавца:">
                         <input type="hidden" name="no_shipping" value="2">
                         <input type="hidden" name="bn" value="PP-DonationsBF:button.png:NonHosted">
-                        <input type="image" src="http://madcrush.ru/wp-content/uploads/button.png" border="0" style="margin-left: -10px;"
+                        <input type="image" src="../img/button.png" border="0" style="margin-left: -10px;"
                                name="submit" alt="PayPal — более безопасный и легкий способ оплаты через Интернет!">
 
                     </form>
