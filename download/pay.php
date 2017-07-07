@@ -33,7 +33,6 @@
             $("#amount").val($("#slider-range-min").slider("value"));
             $("#amount_0").val($("#slider-range-min").slider("value"));
 
-
             $("label#c_1_2").on("click", function (e) {
 
                 var amount = $("#amount_0").val();
@@ -64,7 +63,7 @@
 
 <?php
 
-$amount = !empty($_POST['check_pay']) ? $_POST['check_pay'] : 0;
+$amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST['check_pay']) ? $_POST['check_pay'] : '');
 
 ?>
 
@@ -107,7 +106,7 @@ $amount = !empty($_POST['check_pay']) ? $_POST['check_pay'] : 0;
                     <li><a href="/download/index.html" class="cc-active">Download</a></li>
                     <li><a href="https://whonix.org/wiki/Main_Page">Wiki</a></li>
                     <li><a href="https://forums.whonix.org/">Forum</a></li>
-                    <li><a href="pay.html" class="donate_button">Donate</a></li>
+                    <li><a href="pay.php" class="donate_button">Donate</a></li>
                 </ul>
             </nav>
         </div>
@@ -162,26 +161,41 @@ $amount = !empty($_POST['check_pay']) ? $_POST['check_pay'] : 0;
             <p class="editable">I support Whonix, and want to donate about</p>
 
             <form action="pay.php" method="post">
-                <label class="label_r"><input type="radio" checked name="check_pay" id="radio_pay_1"
-                                              class="radio"/><span class="radio-custom"></span><span class="label_text">$ 1</span></label>
-                <label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay"
-                                                                             id="radio_pay_2" class="radio"/><span
-                            class="radio-custom"></span><span class="label_text">$ 10</span></label>
-                <label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay"
-                                                                             id="radio_pay_3" class="radio"/><span
-                            class="radio-custom"></span><span class="label_text">$ 50</span></label>
-                <label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay"
-                                                                             id="radio_pay_4" class="radio"/><span
-                            class="radio-custom"></span><span class="label_text">$ 100</span></label>
-                <label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay"
-                                                                             id="radio_pay_5" class="radio"/><span
-                            class="radio-custom"></span><span class="label_text">$ 500</span></label>
-                <label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay"
-                                                                             id="radio_pay_5" class="radio"/><span
-                            class="radio-custom"></span><span class="label_text">$ 1000</span></label>
-                <label class="label_r" style="display: inline-block;"><input type="radio" name="check_pay"
-                                                                             id="radio_pay_5" class="radio"/><span
-                            class="radio-custom"></span><span class="label_text">$ 5000</span></label>
+                <label class="label_r">
+                    <input type="radio" name="check_pay_r" value="1"  id="radio_pay_1" class="radio"/>
+                    <span class="radio-custom"></span>
+                    <span class="label_text">$ 1</span>
+                </label>
+                <label class="label_r" style="display: inline-block;">
+                    <input type="radio" name="check_pay_r" value="10" id="radio_pay_2" class="radio"/>
+                    <span class="radio-custom"></span>
+                    <span class="label_text">$ 10</span>
+                </label>
+                <label class="label_r" style="display: inline-block;">
+                    <input type="radio" name="check_pay_r" value="50" id="radio_pay_3" class="radio"/>
+                    <span class="radio-custom"></span>
+                    <span class="label_text">$ 50</span>
+                </label>
+                <label class="label_r" style="display: inline-block;">
+                    <input type="radio" name="check_pay_r" value="100" id="radio_pay_4" class="radio"/>
+                    <span class="radio-custom"></span>
+                    <span class="label_text">$ 100</span>
+                </label>
+                <label class="label_r" style="display: inline-block;">
+                    <input type="radio" name="check_pay_r" value="500" id="radio_pay_5" class="radio"/>
+                    <span class="radio-custom"></span>
+                    <span class="label_text">$ 500</span>
+                </label>
+                <label class="label_r" style="display: inline-block;">
+                    <input type="radio" name="check_pay_r" value="1000" id="radio_pay_6" class="radio"/>
+                    <span class="radio-custom"></span>
+                    <span class="label_text">$ 1000</span>
+                </label>
+                <label class="label_r" style="display: inline-block;">
+                    <input type="radio" name="check_pay_r" value="5000" id="radio_pay_7" class="radio"/>
+                    <span class="radio-custom"></span>
+                    <span class="label_text">$ 5000</span>
+                </label>
         </div>
         <div class="c_1">
             <label class="check_pay_text">
@@ -283,15 +297,16 @@ $amount = !empty($_POST['check_pay']) ? $_POST['check_pay'] : 0;
                     </div>
                 </a>
                 <div id="pay_text_04">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                          name="paypal_pay_01">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
                         <div id="pay_paypal_h1">Paypal Subscribtion</div>
-                        <input type="text" class="paypal_price" name="amount" pattern="\d*" placeholder="20"
+                        <input type="text" class="paypal_price" name="a3" pattern="\d*" placeholder="20"
                                value="<?= $amount ?>"
                                required>
-                        <select class="paypal_price_m">
+                        <select class="paypal_price_m" name="currency_code">
                             <option>USD</option>
                             <option>EUR</option>
+                            <option>RUB</option>
                         </select>
                         <div class="img_paypal">
                             <img src="../img/pay_04_pay.png" style="box-shadow: none;"></div>
@@ -299,14 +314,12 @@ $amount = !empty($_POST['check_pay']) ? $_POST['check_pay'] : 0;
                         <input type="hidden" name="cmd" value="_xclick-subscriptions">
                         <input type="hidden" name="business" value="JD8QS8KA2CLBQ">
                         <input type="hidden" name="lc" value="RU">
-                        <input type="hidden" name="item_name" value="Whonix. Donation">
+                        <input type="hidden" name="item_name" value="Whonix. Subscriptions">
                         <input type="hidden" name="no_note" value="1">
                         <input type="hidden" name="no_shipping" value="2">
                         <input type="hidden" name="src" value="1">
-                        <input type="hidden" name="a3" value="1.00">
                         <input type="hidden" name="p3" value="1">
                         <input type="hidden" name="t3" value="M">
-                        <input type="hidden" name="currency_code" value="RUB">
                         <input type="hidden" name="bn" value="PP-SubscriptionsBF:button.png:NonHosted">
                         <input type="image" src="http://madcrush.ru/wp-content/uploads/button.png" border="0" style="margin-left: -10px;"
                                name="submit" alt="PayPal — более безопасный и легкий способ оплаты через Интернет!">
@@ -317,22 +330,21 @@ $amount = !empty($_POST['check_pay']) ? $_POST['check_pay'] : 0;
                     <div id="pay_visa_h1"><a href="https://paypal.me/Whonix">https://paypal.me/Whonix</a></div>
                     <hr>
 
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"
-                          name="paypal_pay_01">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <div id="pay_paypal_h1">Paypal Onetime Donation</div>
                         <input type="text" class="paypal_price" name="amount" pattern="\d*" placeholder="20"
                                value="<?= $amount ?>"
                                required>
-                        <select class="paypal_price_m">
+                        <select class="paypal_price_m" name="currency_code">
                             <option>USD</option>
                             <option>EUR</option>
+                            <option>RUB</option>
                         </select>
                         <div class="img_paypal">
                             <img src="../img/pay_04_pay.png" style="box-shadow: none;"></div>
 
                         <input type="hidden" name="cmd" value="_donations">
                         <input type="hidden" name="business" value="JD8QS8KA2CLBQ">
-                        <input type="hidden" name="lc" value="RU">
                         <input type="hidden" name="item_name" value="Whonix. Donation">
                         <input type="hidden" name="no_note" value="0">
                         <input type="hidden" name="cn" value="Добавить специальные инструкции для продавца:">
