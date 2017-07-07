@@ -14,7 +14,9 @@
 
     <link rel="stylesheet" href="../css/jquery-ui.css">
     <script src="../js/jquery-1.12.4.js"></script>
+	
     <script src="../js/jquery-ui.js"></script>
+	<script src="../js/jquery.ui.touch-punch.js"></script>
     <script>
 
         $(function () {
@@ -266,7 +268,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                 </a>
                 <div id="pay_text_02">
                     <div id="pay_visa_h1">Patrick Schleizer</div>
-                    <div id="pay_visa_h1">IBAN: DE77500100600320473603<BR>BIC: PBNKDEFF</div>
+                    <div id="pay_visa_h1">IBAN: DE775<wbr>001006<wbr>003204<wbr>73603<BR>BIC: PBNKDEFF</div>
                 </div>
             </div>
 
@@ -282,7 +284,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                 </a>
                 <div id="pay_text_03">
                     <div id="pay_visa_h1">Bitcoin accepted here</div>
-                    <div id="pay_visa_h1">1CWqkunp7sXaywTMR3pzfsiikt2DZ8DuuS</div>
+                    <div id="pay_visa_h1">1CWqk<wbr>unp7s<wbr>Xayw<wbr>TMR3<wbr>pzfs<wbr>iikt<wbr>2DZ8<wbr>DuuS</div>
                 </div>
             </div>
 
@@ -369,8 +371,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                 </a>
                 <div id="pay_text_05">
                     <div id="pay_visa_h1">Monero accepted here</div>
-                    <div id="pay_visa_h1">4AHtZCaHJx8VbpKEjA1kj91GjZ94XLJzfVop3pziJVXBJb6sHXQ2Xz8
-	NFNcKi5ZQxPbxEx2i2iLqvfoGzURzkUSfD83dBSP</div>
+                    <div id="pay_visa_h1">4AHt<wbr>ZCaH<wbr>Jx8V<wbr>bpKE<wbr>jA1k<wbr>j91G<wbr>jZ94<wbr>XLJz<wbr>fVop<wbr>3pzi<wbr>JVXB<wbr>Jb6s<wbr>HXQ2<wbr>Xz8N<wbr>FNcK<wbr>i5ZQ<wbr>xPbx<wbr>Ex2i<wbr>2iLq<wbr>vfoG<wbr>zURz<wbr>kUSf<wbr>D83d<wbr>BSP</div>
                     </div>
                 </div>
 
@@ -387,7 +388,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                 </a>
                 <div id="pay_text_06">
                     <div id="pay_visa_h1">Dash accepted here</div>
-                    <div id="pay_visa_h1">XhEAJMxSJSZFWS14dYbmJ1uE82pBnxasCM</div>
+                    <div id="pay_visa_h1">XhEA<wbr>JMxS<wbr>JSZF<wbr>WS14<wbr>dYbm<wbr>J1uE<wbr>82pB<wbr>nxa<wbr>sCM</div>
                 </div>
             </div>
 
@@ -403,7 +404,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
                 </a>
                 <div id="pay_text_07">
                     <div id="pay_visa_h1">Litecoin accepted here</div>
-                    <div id="pay_visa_h1">LW3wgQtZhtR2G5Uv48rSzonFd1arhUfjE9</div>
+                    <div id="pay_visa_h1">LW3w<wbr>gQtZ<wbr>htR2<wbr>G5Uv<wbr>48rSz<wbr>onFd<wbr>1arh<wbr>UfjE9</div>
                 </div>
             </div>
         </div>
