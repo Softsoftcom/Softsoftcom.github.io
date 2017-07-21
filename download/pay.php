@@ -5,61 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="../css/font.css?family=Roboto" rel="stylesheet">
     <title>Whonix</title>
     <link rel="shortcut icon" href="../img/favicon.png">
 
     <!-- Bootstrap core CSS -->
     <link href="../css/style.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/jquery-ui.css">
-    <script src="../js/jquery-1.12.4.js"></script>
-	
-    <script src="../js/jquery-ui.js"></script>
-	<script src="../js/jquery.ui.touch-punch.js"></script>
-    <script>
-
-        $(function () {
-            $("#slider-range-min").slider({
-                range: "min",
-                value: 0,
-                min: 0,
-                step: 50,
-                max: 10000,
-                slide: function (event, ui) {
-                    $("#amount").val(ui.value),
-                        $("#flevel").val(ui.value),
-                        $("#amount_0").val(ui.value)
-                }
-            });
-            $("#amount").val($("#slider-range-min").slider("value"));
-            $("#amount_0").val($("#slider-range-min").slider("value"));
-
-            $("label#c_1_2").on("click", function (e) {
-
-                var amount = $("#amount_0").val();
-
-                $(".paypal_price").val(amount);
-            });
-
-            $("#amount").on("change", function (e) {
-
-                $("#amount_0").val($("#amount").val());
-            })
-        });
-
-    </script>
-
-    <script>
-        setTimeout(function () {
-            $('#pay_cont_1_section_js').css('display', 'block');
-        }, 1);
-        setTimeout(function () {
-            $('#pay_cont_1_section_nonjs').css('display', 'none');
-        }, 1);
-
-    </script>
-
+  
 </head>
 <body>
 
@@ -126,34 +78,7 @@ $amount = !empty($_POST['check_pay_r']) ? $_POST['check_pay_r'] : (!empty($_POST
     </div>
 </section>
 
-<section id="pay_cont_1_section_js">
-    <div class="container subheader" id="pay_cont_1">
-        <form>
-            <div class="c_0">
-                <h4 class="editable">Whonix</h4>
-                <p class="editable">I support Whonix, and want to donate about</p>
 
-                <div id="slider-range-min">
-                    <span id="span_1"><div class="span_1_text">1</div></span>
-
-                    <span id="span_2"><div class="span_2_text">10.000</div></span>
-                </div>
-
-                <p class="p_span">
-                    <input name="rangeInput" type="text" id="amount">
-
-                </p>
-            </div>
-            <div class="c_1">
-                <p id="c_1_0">Your contribution</p>
-
-                <input name="amount" id="amount_0" align="left" readonly type="text"/>
-
-                <label type="submit" value="Pay" align="left" id="c_1_2" for="zayavka" class="button"> Pay </label>
-            </div>
-        </form>
-    </div>
-</section>
 
 <section id="pay_cont_1_section_nonjs">
     <div class="container subheader" id="pay_cont_1">
